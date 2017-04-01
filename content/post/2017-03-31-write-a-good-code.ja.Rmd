@@ -124,7 +124,7 @@ QuantEconの中の[Writing Good Code](https://lectures.quantecon.org/py/writing_
 
 ```{r}
 
- multipleRundomBrrayBy  <- function(parameters){
+ multipleRundomArrayBy  <- function(parameters){
   for (p in parameters) {
     sampleVector <- sample(1:99, 5)
     print(sampleVector * p)
