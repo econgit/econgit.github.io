@@ -138,7 +138,7 @@ QuantEconの中の[Writing Good Code](https://lectures.quantecon.org/py/writing_
 ```{r}
 
  parameters <- 1:5
- multipleRundomBrrayBy (parameters)
+ multipleRundomArrayBy (parameters)
 
 ```
 
