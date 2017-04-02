@@ -124,7 +124,7 @@ QuantEconの中の[Writing Good Code](https://lectures.quantecon.org/py/writing_
 
 ```{r}
 
- multipleRundomArrayBy  <- function(parameters){
+ multipleRandonArrayBy  <- function(parameters){
   for (p in parameters) {
     sampleVector <- sample(1:99, 5)
     print(sampleVector * p)
@@ -138,7 +138,7 @@ QuantEconの中の[Writing Good Code](https://lectures.quantecon.org/py/writing_
 ```{r}
 
  parameters <- 1:5
- multipleRundomArrayBy (parameters)
+ multipleRandonArrayBy (parameters)
 
 ```
 
@@ -238,7 +238,7 @@ QuantEconの中の[Writing Good Code](https://lectures.quantecon.org/py/writing_
 [^1]: 出典不明
 [^2]: 記事を書く一週間前
 [^3]: マジックナンバーという用語は他の意味で使われることもある。例えば、人間は3つ列挙されると理解やされやすいという意味でマジックナンバー3と呼ばれることがあり、スティーブ・ジョブズは自身のプレゼンで3という数字に[こだわった](http://news.mynavi.jp/articles/2015/03/01/sj/)と言われている。
-[^4]: R では1次元の配列はベクトル。2次元は行列。3次元以上を配列と呼ぶようです([Kenji Sato](https://www.kenjisato.jp)さんからの指摘)。
+[^4]: Rでは数字を一列に並べて格納しているデーター型のことをベクトルと呼ぶ[(参考)](https://cran.r-project.org/doc/manuals/r-release/R-intro.html#Vectors-and-assignment)。そして、複数次元で格納されているデーター型を配列と呼び、特に2次元で格納されているものを行列と呼ぶ[(参考)](https://cran.r-project.org/doc/manuals/r-release/R-intro.html#Other-types-of-objects)
 [^5]: Rでもクラスを定義して使用することができるようだが、筆者は未体験である。
 [^6]: ここまで来てお気付きの読者もいるかもしれないが、このプログラム、全くの無意味である。あくまで、説明のために使った。
 [^7]: あくまで伝聞である。筆者の体験ではない。
