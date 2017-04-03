@@ -124,7 +124,11 @@ QuantEconの中の[Writing Good Code](https://lectures.quantecon.org/py/writing_
 
 ```{r}
 
+<<<<<<< HEAD
  multipleRandonArrayBy  <- function(parameters){
+=======
+ multipleRandomArrayBy  <- function(parameters){
+>>>>>>> 40eff8f1f348936019e0ca39bd2bc176eeef3390
   for (p in parameters) {
     sampleVector <- sample(1:99, 5)
     print(sampleVector * p)
@@ -138,7 +142,11 @@ QuantEconの中の[Writing Good Code](https://lectures.quantecon.org/py/writing_
 ```{r}
 
  parameters <- 1:5
+<<<<<<< HEAD
  multipleRandonArrayBy (parameters)
+=======
+ multipleRandomArrayBy (parameters)
+>>>>>>> 40eff8f1f348936019e0ca39bd2bc176eeef3390
 
 ```
 
