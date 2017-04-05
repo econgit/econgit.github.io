@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.19" />
+
+
+<title>LaTeX codes (for math) - econgit</title>
+<meta property="og:title" content="LaTeX codes (for math) - econgit">
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/github.min.css' rel='stylesheet' type='text/css'>
+
+
+
+<link rel="stylesheet" href="https://econgit.github.io/css/fonts.css" media="all">
+<link rel="stylesheet" href="https://econgit.github.io/css/main.css" media="all">
+
+<link rel="stylesheet" href="https://econgit.github.io/css/custom.css">
+
+<link rel="shortcut icon" type="image/svg+xml" sizes="any" href="https://econgit.github.io/images/eco_green_growth_2.svg" />
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="https://econgit.github.io/" class="nav-logo">
+    <img src="https://econgit.github.io/images/eco_green_growth_2.svg"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+  <ul class="nav-links"><li class="">
+        <a href="../../../../../en/">Home</a>
+    </li><li class="">
+        <a href="../../../../../en/about/">About</a>
+    </li><li class="">
+        <a href="https://github.com/econgit">GitHub</a>
+    </li>
+    
+  </ul>
+</nav>
+
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">7 min read</span>
+    
+
+    <h1 class="article-title">LaTeX codes (for math)</h1>
+
+    
+    <span class="article-date">April 3, 2017</span>
+    
+    
+    
+  
+  
+
+
+
+    <div class="article-content">
+      <!-- BLOGDOWN-HEAD -->
+<!-- /BLOGDOWN-HEAD -->
+
+<!-- BLOGDOWN-BODY-BEFORE -->
+<!-- /BLOGDOWN-BODY-BEFORE -->
+<div id="to-start" class="section level1">
+<h1>To Start</h1>
+<p>I got in R, Markdown, LaTeX because of an assignment in Macroeconomics. We have been told we could get a bonus if submitted the assignment in R writing in LaTex.Being a Microsoft Office and Stata user I knew nothing about this software and these <em>languages</em>.But I decided that it was time to learn.</p>
+<p>Luckly, there is plenty of information on the net about this topic. However, at the beginning, I found more useful just to replicate the materials provided by the professor in class to get confidence with the new tools. So while learning I ended up writing down the basic codes to start writing economic equations and formulas in LaTeX.</p>
+<p>These notes contain codes for writing mathematics in LaTeX with examples. I think you could find them useful for practice and for a quick review. In fact, when you understand the potentiality of the new tools and that you can use for writing your assignments, articles and thesis you will want to know more. In this case I could suggest to have a look at <a href="http://tex.stackexchange.com/">LaTeX Stack Exchange</a>,<a href="https://it.sharelatex.com/learn/Mathematical_expressions">ShareLaTeX</a>, <a href="https://bookdown.org/yihui/bookdown/">Yihui Xie, <em>bookdown:Authoring Books andTechnical Documents with R Markdown</em></a>.</p>
+<p>I hope you will find my notes useful for your first assignments.</p>
+</div>
+<div id="greek-letters" class="section level1">
+<h1>Greek letters</h1>
+<p>Here a list of some of the most used Greek letters in Economics:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">description</th>
+<th align="left">latex</th>
+<th align="left">result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">alpha</td>
+<td align="left"><code>\alpha</code></td>
+<td align="left"><span class="math inline">\(\alpha\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">beta</td>
+<td align="left"><code>\beta</code></td>
+<td align="left"><span class="math inline">\(\beta\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">gamma</td>
+<td align="left"><code>\gamma</code></td>
+<td align="left"><span class="math inline">\(\gamma\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">theta</td>
+<td align="left"><code>\theta</code></td>
+<td align="left"><span class="math inline">\(\theta\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">sigma</td>
+<td align="left"><code>\sigma</code></td>
+<td align="left"><span class="math inline">\(\sigma\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">rho</td>
+<td align="left"><code>\rho</code></td>
+<td align="left"><span class="math inline">\(\rho\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">lambda</td>
+<td align="left"><code>\lambda</code></td>
+<td align="left"><span class="math inline">\(\lambda\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">phi</td>
+<td align="left"><code>\phi</code></td>
+<td align="left"><span class="math inline">\(\phi\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">psi</td>
+<td align="left"><code>\psi</code></td>
+<td align="left"><span class="math inline">\(\psi\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">epsilon</td>
+<td align="left"><code>\epsilon</code></td>
+<td align="left"><span class="math inline">\(\epsilon\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>For the corresponding capital letter, we just write in the same way but with initial capital letter.</p>
+<p>Example</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">description</th>
+<th align="left">latex</th>
+<th align="left">result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Gamma</td>
+<td align="left"><code>\Gamma</code></td>
+<td align="left"><span class="math inline">\(\Gamma\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Lambda</td>
+<td align="left"><code>\Lambda</code></td>
+<td align="left"><span class="math inline">\(\Lambda\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Sigma</td>
+<td align="left"><code>\Sigma</code></td>
+<td align="left"><span class="math inline">\(\Sigma\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Psi</td>
+<td align="left"><code>\Psi</code></td>
+<td align="left"><span class="math inline">\(\Psi\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Delta</td>
+<td align="left"><code>\Delta</code></td>
+<td align="left"><span class="math inline">\(\Delta\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Xi</td>
+<td align="left"><code>\Xi</code></td>
+<td align="left"><span class="math inline">\(\Xi\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Upsilon</td>
+<td align="left"><code>\Upsilon</code></td>
+<td align="left"><span class="math inline">\(\Upsilon\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Omega</td>
+<td align="left"><code>\Omega</code></td>
+<td align="left"><span class="math inline">\(\Omega\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Theta</td>
+<td align="left"><code>\Theta</code></td>
+<td align="left"><span class="math inline">\(\Theta\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Pi</td>
+<td align="left"><code>\Pi</code></td>
+<td align="left"><span class="math inline">\(\Pi\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Phi</td>
+<td align="left"><code>\Phi</code></td>
+<td align="left"><span class="math inline">\(\Phi\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="parenthesis" class="section level1">
+<h1>Parenthesis</h1>
+<p>We can write parenthesis and brackets just giving the input on the keyboard <span class="math inline">\(()\)</span> or <span class="math inline">\([]\)</span>. This does not work for braces.</p>
+<p>Another way is to write parenthesis with the following notation:</p>
+<div class="twocol">
+<div class="left">
+<p><strong>LaTeX CODE</strong></p>
+<pre><code>$$
+\left(
+\right) \\
+\left[
+\right]
+$$</code></pre>
+</div>
+<!-- left -->
+<div class="right">
+<p><strong>RESULT</strong> <span class="math display">\[
+\left(
+\right) \\
+\left[
+\right]
+\]</span></p>
+</div>
+<!-- right -->
+</div>
+<!-- twocol -->
+<p>that is writing <code>\left</code> <em>before opening the parenthesis</em> and <code>\right</code> <em>before closing the parenthesis</em>.</p>
+<p>In case of braces, we should use the following notation:</p>
+<div class="twocol">
+<div class="left">
+<p><strong>LaTeX CODE</strong></p>
+<pre><code>$$
+\left\{
+\right\}
+$$</code></pre>
+</div>
+<!-- left -->
+<div class="right">
+<p><strong>RESULT</strong> <span class="math display">\[
+\left\{
+\right\}
+\]</span></p>
+</div>
+<!-- right -->
+</div>
+<!-- twocol -->
+<p>Note the difference with brackets that are written <code>\left\</code> and <code>\right\</code>.</p>
+<p>Example:</p>
+<div class="twocol">
+<div class="left">
+<p><strong>LaTeX CODE</strong></p>
+<pre><code>$$
+10 \cdot 
+  \left\{
+    5 + \left[
+      3 + 2 \cdot 
+         \left(
+            9-1\right)
+        \right]  
+  \right\}
+$$</code></pre>
+</div>
+<!-- left -->
+<div class="right">
+<p><strong>RESULT</strong> <span class="math display">\[
+10 \cdot 
+  \left\{
+    5 + \left[
+      3 + 2 \cdot 
+         \left(
+            9-1\right)
+        \right]  
+  \right\}
+\]</span></p>
+</div>
+<!-- right -->
+</div>
+<!-- twocol -->
+<p>The opportunity to write the full notation for parenthesis and brackets will be clear when dealing whit fractions.</p>
+</div>
+<div id="fractions" class="section level1">
+<h1>Fractions</h1>
+<p>To write fractions the inputs to give are <code>\frac</code> and then <em>numerator and denominator written between two braces</em>. With an example will be clear.</p>
+<p>Example:</p>
+<div class="twocol">
+<div class="left">
+<p><strong>LaTeX CODE</strong></p>
+<pre><code>$$
+\frac{5}{2}
+$$</code></pre>
+</div>
+<!-- left -->
+<div class="right">
+<p><strong>RESULT</strong> <span class="math display">\[
+\frac{5}{2}
+\]</span></p>
+</div>
+<!-- right -->
+</div>
+<!-- twocol -->
+<p>Example:</p>
+<div class="twocol">
+<div class="left">
+<p><strong>LaTeX CODE</strong></p>
+<pre><code>$$
+\frac{\alpha}{1-\alpha} = \phi
+$$</code></pre>
+</div>
+<!-- left -->
+<div class="right">
+<p><strong>RESULT</strong> <span class="math display">\[
+\frac{\alpha}{1-\alpha} = \phi
+\]</span></p>
+</div>
+<!-- right -->
+</div>
+<!-- twocol -->
+</div>
+<div id="paranthesis-fraction" class="section level1">
+<h1>Paranthesis &amp; Fraction</h1>
+<p>If we write a fraction in parenthesis with the shortcut</p>
+<div class="twocol">
+<div class="left">
+<p><strong>LaTeX CODE</strong></p>
+<pre><code>$$
+( \frac{5}{2})
+$$</code></pre>
+</div>
+<!-- left -->
+<div class="right">
+<p><strong>RESULT</strong> <span class="math display">\[
+( \frac{5}{2})
+\]</span></p>
+</div>
+<!-- right -->
+</div>
+<!-- twocol -->
+<p>the parenthesis do not fit the fraction.</p>
+<p>If we write with full notation</p>
+<div class="twocol">
+<div class="left">
+<p><strong>LaTeX CODE</strong></p>
+<pre><code>$$
+\left(
+\frac{5}{2}
+\right)
+$$</code></pre>
+</div>
+<!-- left -->
+<div class="right">
+<p><strong>RESULT</strong> <span class="math display">\[
+\left(
+\frac{5}{2}
+\right)
+\]</span></p>
+</div>
+<!-- right -->
+</div>
+<!-- twocol -->
+<p>we will have an appropriate result.</p>
+<p>Example:</p>
+<div class="twocol">
+<div class="left">
+<p><strong>LaTeX CODE</strong></p>
+<pre><code>$$
+\frac{Y}{L} =
+\left(
+\frac{K}{L}, 1
+\right)
+$$</code></pre>
+</div>
+<!-- left -->
+<div class="right">
+<p><strong>RESULT</strong> <span class="math display">\[
+\frac{Y}{L} =
+\left(
+\frac{K}{L}, 1
+\right)
+\]</span></p>
+</div>
+<!-- right -->
+</div>
+<!-- twocol -->
+</div>
+<div id="exponential" class="section level1">
+<h1>Exponential</h1>
+<p>To write the exponential we use the symbol <code>^</code></p>
+<div class="twocol">
+<div class="left">
+<p><strong>LaTeX CODE</strong></p>
+<pre><code>$$
+2^5
+$$</code></pre>
+</div>
+<!-- left -->
+<div class="right">
+<p><strong>RESULT</strong> <span class="math display">\[
+2^5
+\]</span></p>
+</div>
+<!-- right -->
+</div>
+<!-- twocol -->
+<p>In case of operation in the exponential, we need to <em>use braces after</em> <code>^</code></p>
+<p>Example:</p>
+<div class="twocol">
+<div class="left">
+<p><strong>LaTeX CODE</strong></p>
+<pre><code>$$
+F(K, L) = 
+K^\alpha L^\beta
+$$</code></pre>
+</div>
+<!-- left -->
+<div class="right">
+<p><strong>RESULT</strong> <span class="math display">\[
+F(K, L) = 
+K^\alpha L^\beta
+\]</span></p>
+</div>
+<!-- right -->
+</div>
+<!-- twocol -->
+<p>Example:</p>
+<div class="twocol">
+<div class="left">
+<p><strong>LaTeX CODE</strong></p>
+<pre><code>$$
+F(K, L) =
+\left[
+\gamma K^\frac{\sigma - 1}{\sigma}
+ + (1 - \gamma)L^\frac{\sigma - 1}{\sigma}
+\right]^\frac{\sigma}{\sigma - 1}
+$$</code></pre>
+</div>
+<!-- left -->
+<div class="right">
+<p><strong>RESULT</strong> <span class="math display">\[
+F(K, L) =
+\left[
+\gamma K^\frac{\sigma - 1}{\sigma}
+ + (1 - \gamma)L^\frac{\sigma - 1}{\sigma}
+\right]^\frac{\sigma}{\sigma - 1}
+\]</span></p>
+</div>
+<!-- right -->
+</div>
+<!-- twocol -->
+</div>
+<div id="subscript" class="section level1">
+<h1>Subscript</h1>
+<p>To write subscript use the symbol <code>_</code></p>
+<div class="twocol">
+<div class="left">
+<p><strong>LaTeX CODE</strong></p>
+<pre><code>$$
+t_0
+$$</code></pre>
+</div>
+<!-- left -->
+<div class="right">
+<p><strong>RESULT</strong> <span class="math display">\[
+t_0
+\]</span></p>
+</div>
+<!-- right -->
+</div>
+<!-- twocol -->
+<p>We use <em>braces in case of operation in subscript</em></p>
+<p>Example</p>
+<div class="twocol">
+<div class="left">
+<p><strong>LaTeX CODE</strong></p>
+<pre><code>$$
+y_ty_{t-j}
+$$</code></pre>
+</div>
+<!-- left -->
+<div class="right">
+<p><strong>RESULT</strong> <span class="math display">\[
+y_ty_{t-j}
+\]</span></p>
+</div>
+<!-- right -->
+</div>
+<!-- twocol -->
+</div>
+<div id="derivative" class="section level1">
+<h1>Derivative</h1>
+<p>Example:</p>
+<div class="twocol">
+<div class="left">
+<p><strong>LaTeX CODE</strong></p>
+<pre><code>$$
+\frac{dk}{k}
+$$</code></pre>
+</div>
+<!-- left -->
+<div class="right">
+<p><strong>RESULT</strong> <span class="math display">\[
+\frac{dk}{k}
+\]</span></p>
+</div>
+<!-- right -->
+</div>
+<!-- twocol -->
+<p>To write partial differentiation, write <code>\partial</code> in the fraction notation</p>
+<p>Example:</p>
+<div class="twocol">
+<div class="left">
+<p><strong>LaTeX CODE</strong></p>
+<pre><code>$$
+\frac{
+\partial F}{
+\partial K}
+r + \delta
+$$</code></pre>
+</div>
+<!-- left -->
+<div class="right">
+<p><strong>RESULT</strong> <span class="math display">\[
+\frac{
+\partial F}{
+\partial K}
+r + \delta
+\]</span></p>
+</div>
+<!-- right -->
+</div>
+<!-- twocol -->
+</div>
+<div id="lagrangian" class="section level1">
+<h1>Lagrangian</h1>
+<p>The symbol of Lagrangian is written as follows:</p>
+<div class="twocol">
+<div class="left">
+<p><strong>LaTeX CODE</strong></p>
+<pre><code>$$
+\mathcal L
+$$</code></pre>
+</div>
+<!-- left -->
+<div class="right">
+<p><strong>RESULT</strong> <span class="math display">\[
+\mathcal L
+\]</span></p>
+</div>
+<!-- right -->
+</div>
+<!-- twocol -->
+</div>
+<div id="summation" class="section level1">
+<h1>Summation</h1>
+<p>The code to write summation is the following: symbol of <code>\sum_</code> followed by <em>braces with lower bound of summation</em> and <code>^</code> <em>before the brace with the upper bound of summation</em>.</p>
+<p>Example:</p>
+<div class="twocol">
+<div class="left">
+<p><strong>LaTeX CODE</strong></p>
+<pre><code>$$
+\sum_{t_0}^{\infty}
+$$</code></pre>
+</div>
+<!-- left -->
+<div class="right">
+<p><strong>RESULT</strong> <span class="math display">\[
+\sum_{t_0}^{\infty}
+\]</span></p>
+</div>
+<!-- right -->
+</div>
+<!-- twocol -->
+<p>An example summing up what we saw until now:</p>
+<div class="twocol">
+<div class="left">
+<p><strong>LaTeX CODE</strong></p>
+<pre><code>$$
+\mathcal L =
+\sum_{t=0}^{\infty}
+\left(
+\frac {1}{1 + \rho}
+\right)^{t} u(c_t)
+\frac{L_t}{H}
+ + \lambda
+\left[
+S_0 + \sum_{t=0}^{\infty}
+R_t^{-1}w_t
+\left(
+\frac{L_t}{H}
+\right)
+- \sum_{t=0}^{\infty} R_t^{-1}c_t
+\left(
+\frac{L_t}{H}
+\right)
+\right]
+$$</code></pre>
+</div>
+<!-- left -->
+<div class="right">
+<p><strong>RESULT</strong> <span class="math display">\[
+\mathcal L =
+\sum_{t=0}^{\infty}
+\left(
+\frac {1}{1 + \rho}
+\right)^{t} u(c_t)
+\frac{L_t}{H}
+ + \lambda
+\left[
+S_0 + \sum_{t=0}^{\infty}
+R_t^{-1}w_t
+\left(
+\frac{L_t}{H}
+\right)
+- \sum_{t=0}^{\infty} R_t^{-1}c_t
+\left(
+\frac{L_t}{H}
+\right)
+\right]
+\]</span></p>
+</div>
+<!-- right -->
+</div>
+<!-- twocol -->
+</div>
+<div id="limit" class="section level1">
+<h1>Limit</h1>
+<p>The code for limit is written as follows:</p>
+<div class="twocol">
+<div class="left">
+<p><strong>LaTeX CODE</strong></p>
+<pre><code>$$
+\lim_{t\to\infty}
+$$</code></pre>
+</div>
+<!-- left -->
+<div class="right">
+<p><strong>RESULT</strong> <span class="math display">\[
+\lim_{t\to\infty}
+\]</span></p>
+</div>
+<!-- right -->
+</div>
+<!-- twocol -->
+<p>Example:</p>
+<div class="twocol">
+<div class="left">
+<p><strong>LaTeX CODE</strong></p>
+<pre><code>$$
+\lim_
+{t\to\infty}
+R_t^{-1}S_t = 0
+$$</code></pre>
+</div>
+<!-- left -->
+<div class="right">
+<p><strong>RESULT</strong> <span class="math display">\[
+\lim_
+{t\to\infty}
+R_t^{-1}S_t = 0
+\]</span></p>
+</div>
+<!-- right -->
+</div>
+<!-- twocol -->
+<p>Example</p>
+<div class="twocol">
+<div class="left">
+<p><strong>LaTeX CODE</strong></p>
+<pre><code>$$
+e^{
+lim_{\gamma\to0}
+\frac{1}{\gamma}ln
+\left[
+\alpha K^\gamma + (1 - \alpha)L^\gamma
+\right]}
+$$</code></pre>
+</div>
+<!-- left -->
+<div class="right">
+<p><strong>RESULT</strong> <span class="math display">\[
+e^{
+lim_{\gamma\to0}
+\frac{1}{\gamma}ln
+\left[
+\alpha K^\gamma + (1 - \alpha)L^\gamma
+\right]}
+\]</span></p>
+</div>
+<!-- right -->
+</div>
+<!-- twocol -->
+</div>
+<div id="integrals" class="section level1">
+<h1>Integrals</h1>
+<div class="twocol">
+<div class="left">
+<p><strong>LaTeX CODE</strong></p>
+<pre><code>$$
+\int_0^\infty
+$$</code></pre>
+</div>
+<!-- left -->
+<div class="right">
+<p><strong>RESULT</strong> <span class="math display">\[
+\int_0^\infty
+\]</span></p>
+</div>
+<!-- right -->
+</div>
+<!-- twocol -->
+<p>Example</p>
+<div class="twocol">
+<div class="left">
+<pre><code>$$
+\int_0^\infty
+  \left[
+    r(t)e^{-R(t)}S(t) 
+    + e^{-R(t)} w(t) 
+    \frac{L(t)}{H}
+    -e^{-R(t)}c(t) 
+    \frac{L(t)}{H} 
+  \right]
+  dt
+$$</code></pre>
+</div>
+<!-- .left -->
+<div class="right">
+<p><span class="math display">\[
+\int_0^\infty\left[r(t)e^{-R(t)}S(t) + e^{-R(t)} w(t) \frac{L(t)}{H}-e^{-R(t)}c(t) \frac{L(t)}{H} \right]dt
+\]</span></p>
+</div>
+<!-- .left -->
+</div>
+</div>
+<div id="matrix" class="section level1">
+<h1>Matrix</h1>
+<p>The following example shows how to write a matrix.</p>
+<p>Note that <code>\bmatrix</code> stands for <em>bracket matrix</em> while <code>\pmatrix</code> stands for <em>parenthesized matrix</em>. Other kinds of matrix are available.</p>
+<p>Moreover, <code>\vdots</code> stands for <em>vertical dots</em> while <code>\ddots</code> for <em>diagonal dots</em>. <code>\cdots</code> stands for <em>central dots</em>, used also as multiplication sign.</p>
+<div class="twocol">
+<div class="left">
+<pre><code>$$
+A =
+\begin{bmatrix}
+  a_{11} &amp; a_{12} &amp; a_{13} &amp; \dots &amp; a_{1n} \\
+  a_{21} &amp; a_{22} &amp; a_{23} &amp; \dots &amp; a_{2n} \\
+  \vdots &amp; \vdots &amp; \vdots &amp; \vdots &amp; \vdots\\
+  a_{m1} &amp; a_{m2} &amp; a_{m3} &amp; \dots &amp; a_{mn} \\
+\end{bmatrix}
+\ne
+B =
+\begin{pmatrix}
+ b_{11} &amp; b_{12} &amp; b_{13} &amp; \cdots &amp; b_{1n} \\
+ b_{21} &amp; \ddots &amp; b_{23} &amp; \cdots &amp; b_{2n} \\
+ ...&amp;...&amp;... &amp; \ddots &amp;... \\
+ b_{m1} &amp; b_{m2} &amp; b_{m3} &amp; \dots &amp; b_{mn} \\
+\end{pmatrix}
+$$</code></pre>
+</div>
+<!-- .left -->
+<div class="right">
+<p><span class="math display">\[
+A =
+\begin{bmatrix}
+  a_{11} &amp; a_{12} &amp; a_{13} &amp; \dots &amp; a_{1n} \\
+  a_{21} &amp; a_{22} &amp; a_{23} &amp; \dots &amp; a_{2n} \\
+  \vdots &amp; \vdots &amp; \vdots &amp; \vdots &amp; \vdots\\
+  a_{m1} &amp; a_{m2} &amp; a_{m3} &amp; \dots &amp; a_{mn} \\
+\end{bmatrix}
+\ne
+B =
+\begin{pmatrix}
+ b_{11} &amp; b_{12} &amp; b_{13} &amp; \cdots &amp; b_{1n} \\
+ b_{21} &amp; \ddots &amp; b_{23} &amp; \cdots &amp; b_{2n} \\
+ ...&amp;...&amp;... &amp; \ddots &amp;... \\
+ b_{m1} &amp; b_{m2} &amp; b_{m3} &amp; \dots &amp; b_{mn} \\
+\end{pmatrix}
+\]</span></p>
+</div>
+<!-- .left -->
+</div>
+</div>
+<div id="equalities-and-inequalities" class="section level1">
+<h1>Equalities and Inequalities</h1>
+<table>
+<thead>
+<tr class="header">
+<th align="left">desription</th>
+<th align="left">latex</th>
+<th align="left">result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Equality or assignment</td>
+<td align="left"><code>=</code></td>
+<td align="left"><span class="math inline">\(=\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Inequality</td>
+<td align="left"><code>\neq</code></td>
+<td align="left"><span class="math inline">\(\neq\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Less than</td>
+<td align="left"><code>&lt;</code></td>
+<td align="left"><span class="math inline">\(&lt;\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Less than or equal to</td>
+<td align="left"><code>\leq</code></td>
+<td align="left"><span class="math inline">\(\leq\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Greater than</td>
+<td align="left"><code>&gt;</code></td>
+<td align="left"><span class="math inline">\(&gt;\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Greater than or equal to</td>
+<td align="left"><code>\geq</code></td>
+<td align="left"><span class="math inline">\(\geq\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Approximately equal to</td>
+<td align="left"><code>\simeq</code></td>
+<td align="left"><span class="math inline">\(\simeq\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="subset-and-functions" class="section level1">
+<h1>Subset and Functions</h1>
+<table>
+<thead>
+<tr class="header">
+<th align="left">desription</th>
+<th align="left">latex</th>
+<th align="left">result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">A is included in B</td>
+<td align="left"><code>A \subset B</code></td>
+<td align="left"><span class="math inline">\(A \subset B\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">A includes B</td>
+<td align="left"><code>A \supset B</code></td>
+<td align="left"><span class="math inline">\(A \supset B\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">A intersection B</td>
+<td align="left"><code>A \cap B</code></td>
+<td align="left"><span class="math inline">\(A \cap B\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">A union B</td>
+<td align="left"><code>A \cup B</code></td>
+<td align="left"><span class="math inline">\(A \cup B\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">x is in A</td>
+<td align="left"><code>x \in A</code></td>
+<td align="left"><span class="math inline">\(x \in A\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">A contains x</td>
+<td align="left"><code>A \ni x</code></td>
+<td align="left"><span class="math inline">\(A \ni x\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">x is not in A</td>
+<td align="left"><code>x \notin A</code></td>
+<td align="left"><span class="math inline">\(x \notin A\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">for some x</td>
+<td align="left"><code>\exists x</code></td>
+<td align="left"><span class="math inline">\(\exists x\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">for any x</td>
+<td align="left"><code>\forall x</code></td>
+<td align="left"><span class="math inline">\(\forall x\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">tends to / maps into</td>
+<td align="left"><code>\to</code></td>
+<td align="left"><span class="math inline">\(\to\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">gets</td>
+<td align="left"><code>\gets</code></td>
+<td align="left"><span class="math inline">\(\gets\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">A implies B</td>
+<td align="left"><code>A \implies B</code></td>
+<td align="left"><span class="math inline">\(A \implies B\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://econgit.github.io/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="https://econgit.github.io/images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<script async type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+    
+  </body>
+</html>
+
