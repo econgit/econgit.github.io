@@ -22,8 +22,18 @@
   </url>
   
   <url>
+    <loc>https://econgit.github.io/ja/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://econgit.github.io/ja/post/</loc>
     <lastmod>2017-03-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://econgit.github.io/ja/tags/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
